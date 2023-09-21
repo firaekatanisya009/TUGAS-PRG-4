@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Business Casual - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">Rasakan kehangatan dan kelezatan biji kopi, seperti menyatu dengan jiwa!</span>
+            <span class="site-heading-lower">SELAMAT DATANG DI SEJIWA</span>
+        </h1>
+    </header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Products</a></li>
+                    <li class="nav-item px-lg-4 dropdown">
+                        <!-- Added dropdown class to the list item -->
+                        <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Store</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="store.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="store.html">Order</a></li>
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <!-- Add more dropdown items as needed -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/bijikopi.jpg" alt="..." />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">KOPI PREMIUM</span>
+                        <span class="section-heading-lower">LAYAK DIBUAT</span>
+                    </h2>
+                    <p class="mb-3">
+                        Selamat datang di tempat kami, di mana setiap biji kopi memiliki kisah rasa yang ingin Anda nikmati. Kami bukan sekadar penjual biji kopi, kami adalah penjelajah rasa yang membawa Anda dalam perjalanan melintasi aroma dan kenikmatan setiap minuman.
+                        setiap biji kopi mempunyai cerita unik yang kami sajikan dalam secangkir kopi.
+                        Temukan keajaiban kopi di setiap detik hidup hanya di sini!
+                    </p>
+                    <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="store.html">PESAN DISINI!</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner bg-faded text-center rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">JANJI KITA</span>
+                            <span class="section-heading-lower">UNTUK MU</span>
+                        </h2>
+                        <p class="mb-0">Saat Anda memasuki toko kami untuk memulai hari Anda, kami berdedikasi untuk memberikan Anda layanan yang ramah, suasana yang ramah, dan yang terpenting, produk unggulan yang dibuat dengan bahan-bahan berkualitas tinggi. Jika Anda tidak puas, beri tahu kami dan kami akan melakukan apa pun untuk memperbaikinya!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Your Website 2023</p>
+
+            <!-- Kotak Saran dan Rating -->
+            <div class="saran-rating-box">
+                <h3>Beri Saran dan Rating</h3>
+                <textarea rows="4" cols="50" id="saranText" placeholder="Tulis saran Anda..."></textarea>
+                <input type="range" min="1" max="5" value="3" class="slider" id="ratingSlider" oninput="updateRating(this.value)">
+                <p>Rating: <span id="ratingValue">3</span></p>
+                <button onclick="kirimSaranDanRating()">Kirim</button>
+            </div>
+
+            <!-- Validasi -->
+            <div id="validasi" style="display: none; color: red;">Silakan isi saran dan rating terlebih dahulu.</div>
+            <div id="terimakasih" style="display: none; color: green;">Terima kasih atas saran dan rating Anda!</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <!-- Script untuk memperbarui nilai rating dan kirim saran dan rating -->
+    <script>
+        function updateRating(value) {
+            document.getElementById('ratingValue').innerText = value;
+        }
+
+        function kirimSaranDanRating() {
+            var saran = document.getElementById('saranText').value;
+            var rating = document.getElementById('ratingValue').innerText;
+
+            // Validasi
+            if (saran.trim() === '' || rating.trim() === '') {
+                document.getElementById('validasi').style.display = 'block';
+                document.getElementById('terimakasih').style.display = 'none';
+                return;
+            } else {
+                document.getElementById('validasi').style.display = 'none';
+
+                // Sembunyikan kotak saran dan rating
+                document.querySelector('.saran-rating-box').style.display = 'none';
+
+                // Tampilkan pesan terima kasih
+                document.getElementById('terimakasih').style.display = 'block';
+
+                // Kirim saran dan rating ke server atau lakukan tindakan sesuai
+                console.log('Saran: ' + saran);
+                console.log('Rating: ' + rating);
+            }
+        }
+    </script>
+</body>
+
+</html>
